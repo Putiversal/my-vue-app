@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+// import AboutView from "../views/AboutView.vue";
+import TaskManagerView from "../views/TaskManagerView.vue";
 
 const routes = [
   {
@@ -15,6 +17,13 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+  },
+  {
+    path: "/taskManager",
+    name: "taskManager",
+    // component: () =>
+    //   import(/* webpackChunkName: "about" */ "../views/TaskManagerView.vue"),
+    component: TaskManagerView,
   },
 ];
 
