@@ -2,8 +2,8 @@
   <div class="about">
     <h1>This is an about page</h1>
   </div>
-  <button @click="incrementCounter">Simple counter: {{ counter }}</button>
-  <button @click="resetCounter">Reset counter</button>
+  <v-btn @click="incrementCounter">Clicked {{ counter }} times</v-btn>
+  <v-btn @click="resetCounter">Reset counter</v-btn>
   <p :class="isRed">This text is red when counter is 2</p>
   <br />
 </template>

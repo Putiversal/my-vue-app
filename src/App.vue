@@ -1,22 +1,36 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/taskManager">Task manager</router-link>
-  </nav>
-  <router-view />
+  <v-app>
+    <v-app-bar :elevation="3" color="white">
+      <template v-slot:prepend>
+        <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      </template>
+
+      <v-app-bar-title>Application Bar</v-app-bar-title>
+
+      <template v-slot:append>
+        <AzazHeart />
+        <v-btn icon="mdi-magnify"></v-btn>
+        <v-btn icon="mdi-dots-vertical"></v-btn>
+      </template>
+    </v-app-bar>
+
+    <v-main>
+      <nav>
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link> |
+        <router-link to="/taskManager">Task manager</router-link>
+      </nav>
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script setup>
+import AzazHeart from "./components/AzazHeart.vue";
+</script>
 
-nav {
+<style lang="scss" scoped>
+.nav {
   padding: 30px;
 
   a {
