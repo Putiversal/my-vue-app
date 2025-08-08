@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
 import TaskManagerView from "../views/TaskManagerView.vue";
+import AzazGameView from "../views/AzazGameView.vue";
 
 const routes = [
   {
@@ -25,6 +26,11 @@ const routes = [
     // component: () =>
     //   import(/* webpackChunkName: "about" */ "../views/TaskManagerView.vue"),
     component: TaskManagerView,
+  },
+  {
+    path: "/azazGame",
+    name: "azazGame",
+    component: AzazGameView,
   },
 ];
 

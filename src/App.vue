@@ -37,6 +37,11 @@
           to="/taskManager"
           title="Task Manager"
         ></v-list-item>
+        <v-list-item
+          prepend-icon="mdi-gamepad-variant"
+          to="/game"
+          title="Azaz Game"
+        ></v-list-item>
       </v-list>
     </v-navigation-drawer>
 
