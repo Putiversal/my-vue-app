@@ -17,6 +17,6 @@ const azazSuccess = () => {
 
 <style lang="scss" scoped>
 .successColor {
-  color: red;
+  color: blue;
 }
 </style>
