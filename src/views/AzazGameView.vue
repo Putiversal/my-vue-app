@@ -8,10 +8,3 @@
 <script setup>
 import SnakeGame from "@/components/SnakeGame.vue";
 </script>
-
-<style scoped>
-.game-view {
-  padding: 20px;
-  text-align: center;
-}
-</style>
