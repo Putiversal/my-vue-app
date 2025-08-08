@@ -39,7 +39,7 @@
         ></v-list-item>
         <v-list-item
           prepend-icon="mdi-gamepad-variant"
-          to="/game"
+          to="/azazGame"
           title="Azaz Game"
         ></v-list-item>
       </v-list>

@@ -1,1 +1,3 @@
-<template>Тут будет игра Azaz</template>
+<template>
+  <v-container> Тут будет игра Azaz </v-container>
+</template>
