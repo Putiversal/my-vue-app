@@ -6,23 +6,20 @@
 
     <v-row>
       <v-col elevation="3">
-        <v-card>
+        <v-card class="d-flex flex-column h-100">
           <v-card-text>
             <p :class="isRed">This text is red when counter is 2</p>
           </v-card-text>
 
-          <v-card-text>
-            <v-row>
-              <v-col>
-                <v-btn @click="incrementCounter"
-                  >Clicked {{ counter }} times</v-btn
-                >
-              </v-col>
-              <v-col>
-                <v-btn @click="resetCounter">Reset counter</v-btn>
-              </v-col>
-            </v-row>
-          </v-card-text>
+          <!-- Spacer чтобы прижать кнопки вниз -->
+          <v-spacer></v-spacer>
+
+          <v-card-actions class="justify-end">
+            <v-btn @click="incrementCounter">
+              Clicked {{ counter }} times
+            </v-btn>
+            <v-btn @click="resetCounter"> Reset counter </v-btn>
+          </v-card-actions>
         </v-card>
       </v-col>
 
@@ -76,6 +73,9 @@ fetch(
 </script>
 
 <style lang="scss" scoped>
+.v-card {
+  height: 100%;
+}
 .red-colored-text {
   color: red;
 }
