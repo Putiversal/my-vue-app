@@ -2,7 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
 import TaskManagerView from "../views/TaskManagerView.vue";
-import AzazGameView from "../views/AzazGameView.vue";
+import GamesView from "../views/GamesView.vue";
+import SnakeGame from "../views/gameView/SnakeGame.vue"; // Assuming you have a SnakeGame component
 
 const routes = [
   {
@@ -21,16 +22,21 @@ const routes = [
     component: AboutView,
   },
   {
-    path: "/taskManager",
+    path: "/task-manager",
     name: "taskManager",
-    // component: () =>
-    //   import(/* webpackChunkName: "about" */ "../views/TaskManagerView.vue"),
     component: TaskManagerView,
   },
   {
-    path: "/azazGame",
-    name: "azazGame",
-    component: AzazGameView,
+    path: "/games",
+    name: "games",
+    component: GamesView,
+    children: [
+      {
+        path: "snake-game",
+        name: "SnakeGame",
+        component: SnakeGame,
+      },
+    ],
   },
 ];
 

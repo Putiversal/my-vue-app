@@ -24,8 +24,8 @@
       ></v-list-item>
       <v-list-item
         prepend-icon="mdi-gamepad-variant"
-        to="/azazGame"
-        title="Azaz Game"
+        to="/games"
+        title="Games"
       ></v-list-item>
     </v-list>
   </v-navigation-drawer>
