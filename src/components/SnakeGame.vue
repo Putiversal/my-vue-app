@@ -2,8 +2,8 @@
   <div class="game-container">
     <iframe
       src="/wasm/snake/index.html"
-      width="830"
-      height="480"
+      width="1280"
+      height="720"
       frameborder="0"
       style="border: 1px solid #eee; background: white"
     />
