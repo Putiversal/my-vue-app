@@ -4,7 +4,7 @@
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
     </template>
 
-    <v-app-bar-title>Application Bar</v-app-bar-title>
+    <v-app-bar-title>My precious pet project</v-app-bar-title>
 
     <template v-slot:append>
       <AzazHeart />
