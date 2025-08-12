@@ -19,7 +19,7 @@
       ></v-list-item>
       <v-list-item
         prepend-icon="mdi-check"
-        to="/taskManager"
+        to="/task-manager"
         title="Task Manager"
       ></v-list-item>
       <v-list-item
