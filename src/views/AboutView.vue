@@ -1,9 +1,5 @@
 <template>
   <v-container>
-    <div class="about">
-      <h1>This is an about page</h1>
-    </div>
-
     <v-row>
       <v-col elevation="3">
         <v-card class="d-flex flex-column h-100">
